@@ -504,8 +504,25 @@
   </div>
 </section>
 
-<div style="width: 100%; text-align: center; padding: 40px 0; background: #0D0D0D;">
-  <img src="Logo-Trans.png" alt="Judran Studio" style="width: 60%; max-width: 700px; opacity: 0.5;">
+<style>
+  /* This part tells the browser how to behave */
+  .logo-container {
+    width: 100%;
+    background: #0D0D0D;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .responsive-logo {
+    width: 90%;          /* On a phone, it takes up 90% of the screen */
+    max-width: 800px;    /* On a laptop, it stops growing at 800px wide */
+    height: auto;        /* This is the magic: it keeps the logo from looking squished */
+    opacity: 0.5;
+  }
+</style>
+
+<div class="logo-container">
+  <img src="Logo-Trans.png" alt="Judran Studio" class="responsive-logo">
 </div>
 
 <hr class="divider">
