@@ -248,6 +248,9 @@
     border-bottom: 1px solid var(--border);
     transition: background 0.2s;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
   }
 
   .portfolio-card:hover { background: #1a1a1a; }
@@ -261,6 +264,13 @@
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .portfolio-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .portfolio-thumb svg {
@@ -541,39 +551,38 @@
 
 <hr class="divider">
 
-The problem is two things: a stray extra </div> after the portfolio grid, and the Millennium link points to https://judranstudio.github.io/millennium.html — you need to confirm that's the right URL. Here's the corrected portfolio section (replace everything from <!-- PORTFOLIO --> to the <hr> after it):
-html<!-- PORTFOLIO -->
+<!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="container">
     <p class="section-eyebrow">Selected Work</p>
     <h2 class="section-title">Portfolio</h2>
     <div class="portfolio-grid">
 
-      <a href="mellinium/index.html" style="text-decoration:none; color:inherit; display:contents;" class="portfolio-card">
+      <a href="mellinium/index.html" class="portfolio-card">
         <div class="portfolio-thumb">
-          <img src="Mellinium 1.jpg" alt="Millennium Project" style="width:100%; height:100%; object-fit:cover;">
+          <img src="Mellinium 1.jpg" alt="Millennium Project">
         </div>
         <div class="portfolio-info">
-          <p class="portfolio-type">Lead Architect & Contractor</p>
-          <h3>Millennium: High-End Architectural 3D Visualization & Construction</h3>
-          <p>As lead, I managed the project lifecycle from conceptual design to on-site construction.</p>
+          <p class="portfolio-type">Lead Architect &amp; Contractor</p>
+          <h3>Millennium: High-End Architectural 3D Visualization &amp; Construction</h3>
+          <p>As lead, I managed the project lifecycle from conceptual design and technical 3D visualization to on-site construction management. I bridge the gap between digital design and physical reality, delivering end-to-end architectural solutions.</p>
         </div>
       </a>
 
-      <a href="/Villa.html" style="text-decoration:none; color:inherit; display:contents;" class="portfolio-card">
+      <a href="Villa.html" class="portfolio-card">
         <div class="portfolio-thumb">
-          <img src="1-1.jpg" alt="Luxury Residential Villa" style="width:100%; height:100%; object-fit:cover;">
+          <img src="1-1.jpg" alt="Luxury Residential Villa">
         </div>
         <div class="portfolio-info">
-          <p class="portfolio-type">Architectural Visualizer & Environmental Designer</p>
+          <p class="portfolio-type">Architectural Visualizer &amp; Environmental Designer</p>
           <h3>Luxury Residential Villa</h3>
           <p>Autodesk 3ds Max · Chaos Corona · Architectural Design · Photoshop</p>
         </div>
       </a>
 
-      <a href="/Con-Villa.html" style="text-decoration:none; color:inherit; display:contents;" class="portfolio-card">
+      <a href="Con-Villa.html" class="portfolio-card">
         <div class="portfolio-thumb">
-          <img src="2-1.jpg" alt="Contemporary Architectural Exterior" style="width:100%; height:100%; object-fit:cover;">
+          <img src="2-1.jpg" alt="Contemporary Architectural Exterior">
         </div>
         <div class="portfolio-info">
           <p class="portfolio-type">Lead Architectural Visualizer</p>
@@ -582,9 +591,9 @@ html<!-- PORTFOLIO -->
         </div>
       </a>
 
-      <a href="/Buruj.html" style="text-decoration:none; color:inherit; display:contents;" class="portfolio-card">
+      <a href="Buruj.html" class="portfolio-card">
         <div class="portfolio-thumb">
-          <img src="0-main.jpg" alt="Buruj Luxurious Residential Compound" style="width:100%; height:100%; object-fit:cover;">
+          <img src="0-main.jpg" alt="Buruj Luxurious Residential Compound">
         </div>
         <div class="portfolio-info">
           <p class="portfolio-type">Lead Architect · Contractor · Site · Cladding</p>
